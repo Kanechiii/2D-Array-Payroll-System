@@ -1,1 +1,1 @@
-This project created from Apache NetBeans IDE 27 specifically contains the source code in subclass that has the ability to do automate calculation of salary payroll system about the wages, taxes based on status and dependent, deductions, and total payroll of employees accurately based on daily time record of each employee inputted from the system.
+
