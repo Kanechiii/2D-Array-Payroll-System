@@ -61,7 +61,7 @@ class dataEntryClass extends Main
                                 }
                         }while(statusChoice > 4);
 
-                        if(statusChoice != 1)// condition of asking dependent/s if employee is SINGLE 
+                        if(statusChoice != 1)// condition of asking dependent/s if employee is NOT SINGLE 
                             {
                                 System.out.print("Number of Dependent/s: ");
                                 numDepChoice = in.nextInt();
