@@ -70,7 +70,7 @@ class dataEntryClass extends Main
                         else 
                             {
                                 numDepChoiceArr[i] = 0;
-                                numDepEmployee[i] = "0";
+                                numDepEmployee[i] = "0" + "(0%)";
                             }
 
                         in.nextLine();
@@ -101,3 +101,4 @@ class dataEntryClass extends Main
                     }
             }
     }
+
