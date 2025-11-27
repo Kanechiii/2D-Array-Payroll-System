@@ -50,7 +50,7 @@ class searchClass extends Main
 
                     if(!idFound)
                         {
-                            System.out.println("No Employee found with ID number: ID" + idSearch);
+                            JOptionPane.showMessageDialog(null, "No Employee found with ID number: ID" + idSearch, "NO EMP ID FOUND", JOptionPane.ERROR_MESSAGE);
                         }
 
                     input1 = JOptionPane.showConfirmDialog(null, "Try again searching attempts?", "SEARCH ATTEMPTS", JOptionPane.YES_NO_OPTION);
@@ -58,3 +58,4 @@ class searchClass extends Main
                 }while(input1 == JOptionPane.YES_OPTION);
             }
     }
+
