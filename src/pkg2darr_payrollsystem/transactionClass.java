@@ -80,7 +80,7 @@ class transactionClass extends Main
 
             vat = dataEmployee[i][12] * taxRate;
             dataEmployee[i][15] = vat;
-            dataEmployee[i][13] = (dataEmployee[i][12] * vat) - dataEmployee[i][9]; //Net pay
+            dataEmployee[i][13] = dataEmployee[i][12] - dataEmployee[i][9] - dataEmployee[i][15]; //Net pay
             totalPay += dataEmployee[i][13]; //total net pay of employees
         }
     }
@@ -93,6 +93,7 @@ class transactionClass extends Main
                 }
         }
 }
+
 
 
 
