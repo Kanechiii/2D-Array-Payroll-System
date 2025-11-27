@@ -17,7 +17,6 @@ class transactionClass extends Main
             taxRate = 0;
             if(statusChoice == 1)
                 {
-                    numDepEmployee[i] = "0" + "(0%)";
                     statusEmployee[i] = "Single" + "(6%)";
                     taxRate = 0.06;
                 }
@@ -94,5 +93,6 @@ class transactionClass extends Main
                 }
         }
 }
+
 
 
