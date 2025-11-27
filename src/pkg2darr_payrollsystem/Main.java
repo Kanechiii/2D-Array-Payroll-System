@@ -11,6 +11,7 @@ public class Main
     static double dataEmployee[][];
     static double totalPay;
     static double taxRate;
+    static double vat; 
     static int idEmployee[];
     static int statusChoiceArr[];
     static int numDepChoiceArr[];
@@ -46,3 +47,4 @@ public class Main
             }while(input.equals("y"));
         }
 }
+
