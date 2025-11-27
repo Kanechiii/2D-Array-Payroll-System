@@ -17,6 +17,7 @@ class transactionClass extends Main
             taxRate = 0;
             if(statusChoice == 1)
                 {
+                    numDepEmployee[i] = "0" + "(0%)";
                     statusEmployee[i] = "Single" + "(6%)";
                     taxRate = 0.06;
                 }
@@ -33,7 +34,7 @@ class transactionClass extends Main
                             numDepEmployee[i] = "2" + "(2%)";
                             taxRate = 0.02;
                         }
-                    else if(numDepChoice == 3)
+                    else if(numDepChoice >= 3)
                         {
                             numDepEmployee[i] = "3" + "(0%)";
                             taxRate = 0.00;
@@ -71,14 +72,14 @@ class transactionClass extends Main
                             numDepEmployee[i] = "2" + "(2%)";
                             taxRate = 0.02;
                         }
-                    else if(numDepChoice == 3)
+                    else if(numDepChoice >= 3)
                         {
                             numDepEmployee[i] = "3" + "(0%)";
                             taxRate = 0.00;
                         }
                 }
 
-            double vat = dataEmployee[i][12] * taxRate;
+            vat = dataEmployee[i][12] * taxRate;
             dataEmployee[i][15] = vat;
             dataEmployee[i][13] = dataEmployee[i][12] - dataEmployee[i][9] - vat; //Net pay
             totalPay += dataEmployee[i][13]; //total net pay of employees
@@ -93,4 +94,5 @@ class transactionClass extends Main
                 }
         }
 }
+
 
